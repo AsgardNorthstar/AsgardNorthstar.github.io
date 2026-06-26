@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact — AsgardNorthstar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="grid.mp4" type="video/mp4">
+</video>
+<div class="grid-overlay"></div>
+
+<nav>
+    <div class="brand">ASGARDNORTHSTAR</div>
+    <div class="links">
+        <a href="index.html">HOME</a>
+        <a href="systems.html">SYSTEMS</a>
+        <a href="platform.html">PLATFORM</a>
+        <a href="leadership.html">LEADERSHIP</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</nav>
+
+<div class="section fade-in">
+    <div class="section-title">CONTACT</div>
+    <p>
+        For inquiries, collaboration, or discussion, you can use the form below.
+    </p>
+</div>
+
+<div class="contact-form fade-in">
+    <label>Name</label>
+    <input type="text" placeholder="Your name">
+
+    <label>Email</label>
+    <input type="email" placeholder="you@example.com">
+
+    <label>Message</label>
+    <textarea rows="5" placeholder="Your message"></textarea>
+
+    <button type="button">Submit</button>
+</div>
+
+<footer>
+    © 2026 ASGARD NORTHSTAR TECHNOLOGIES
+</footer>
+
+<script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
