@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Platform — AsgardNorthstar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="grid.mp4" type="video/mp4">
+</video>
+<div class="grid-overlay"></div>
+
+<nav>
+    <div class="brand">ASGARDNORTHSTAR</div>
+    <div class="links">
+        <a href="index.html">HOME</a>
+        <a href="systems.html">SYSTEMS</a>
+        <a href="platform.html">PLATFORM</a>
+        <a href="leadership.html">LEADERSHIP</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</nav>
+
+<div class="section fade-in">
+    <div class="section-title">PLATFORM</div>
+    <p>
+        A structured foundation for building, observing, and evolving systems and tools.
+    </p>
+</div>
+
+<div class="grid-blocks fade-in">
+    <div class="block">
+        <h3>Core Services</h3>
+        <p>Shared capabilities that support multiple initiatives.</p>
+    </div>
+    <div class="block">
+        <h3>Observability</h3>
+        <p>Insight into behavior, performance, and readiness.</p>
+    </div>
+    <div class="block">
+        <h3>Evolution</h3>
+        <p>Designed to adapt as requirements and environments change.</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 ASGARD NORTHSTAR TECHNOLOGIES
+</footer>
+
+<script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
