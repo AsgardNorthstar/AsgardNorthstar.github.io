@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Leadership — AsgardNorthstar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="grid.mp4" type="video/mp4">
+</video>
+<div class="grid-overlay"></div>
+
+<nav>
+    <div class="brand">ASGARDNORTHSTAR</div>
+    <div class="links">
+        <a href="index.html">HOME</a>
+        <a href="systems.html">SYSTEMS</a>
+        <a href="platform.html">PLATFORM</a>
+        <a href="leadership.html">LEADERSHIP</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</nav>
+
+<div class="section fade-in">
+    <div class="section-title">LEADERSHIP</div>
+    <p>
+        Leadership at Asgard Northstar is focused on direction, structure, and long‑term readiness.
+    </p>
+</div>
+
+<div class="leader-grid fade-in">
+    <div class="leader">
+        <h3>Ty Carpenter — Founder</h3>
+        <p>Guiding vision, direction, and development across all initiatives.</p>
+    </div>
+    <div class="leader">
+        <h3>Executive Team</h3>
+        <p>Focused on strategy, structure, and operational clarity.</p>
+    </div>
+    <div class="leader">
+        <h3>Advisory</h3>
+        <p>Providing insight, perspective, and long‑term guidance.</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 ASGARD NORTHSTAR TECHNOLOGIES
+</footer>
+
+<script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
 
