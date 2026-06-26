@@ -77,7 +77,6 @@
         .hero {
             height: 90vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -87,8 +86,8 @@
         .hero-panel {
             background: rgba(255,255,255,0.06);
             backdrop-filter: blur(10px);
-            padding: 40px 60px;
-            border-radius: 12px;
+            padding: 50px 80px;
+            border-radius: 14px;
             border: 1px solid rgba(255,255,255,0.08);
             animation: fadeIn 1.5s ease forwards;
         }
@@ -166,6 +165,39 @@
             line-height: 1.5;
         }
 
+        /* LEADERSHIP */
+        .leadership {
+            max-width: 1000px;
+            margin: 120px auto;
+            padding: 0 20px;
+        }
+
+        .leader-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+        }
+
+        .leader {
+            background: rgba(255,255,255,0.03);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+        }
+
+        .leader h3 {
+            margin: 0;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .leader p {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-top: 8px;
+        }
+
         /* FOOTER */
         footer {
             text-align: center;
@@ -193,6 +225,7 @@
     <div class="links">
         <a href="#mission">MISSION</a>
         <a href="#capabilities">CAPABILITIES</a>
+        <a href="#leadership">LEADERSHIP</a>
     </div>
 </nav>
 
@@ -228,6 +261,25 @@
     <div class="cap-block">
         <h3>Research & Exploration</h3>
         <p>Continuous investigation into emerging technologies.</p>
+    </div>
+</div>
+
+<!-- LEADERSHIP -->
+<div id="leadership" class="leadership">
+    <div class="section-title">LEADERSHIP</div>
+    <div class="leader-grid">
+        <div class="leader">
+            <h3>Ty — Founder</h3>
+            <p>Guiding vision, direction, and development across all initiatives.</p>
+        </div>
+        <div class="leader">
+            <h3>Executive Team</h3>
+            <p>Focused on strategy, structure, and operational clarity.</p>
+        </div>
+        <div class="leader">
+            <h3>Advisory</h3>
+            <p>Providing insight, perspective, and long‑term guidance.</p>
+        </div>
     </div>
 </div>
 
