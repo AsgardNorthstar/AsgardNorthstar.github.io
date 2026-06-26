@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Asgard Northstar Technologies</title>
+    <title>ASGARD NORTHSTAR TECHNOLOGIES</title>
     <style>
         body {
             margin: 0;
             background: #0a0a0a;
             color: #e0e0e0;
-            font-family: "Inter", Arial, sans-serif;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
             overflow-x: hidden;
         }
 
@@ -22,19 +22,29 @@
             padding: 0 20px;
         }
 
+        .logo {
+            width: 160px;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
         h1 {
-            font-size: 64px;
+            font-size: 48px;
             font-weight: 600;
             margin: 0;
-            letter-spacing: -1px;
+            letter-spacing: 4px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.3s;
         }
 
         p {
             font-size: 22px;
             max-width: 700px;
             margin-top: 20px;
-            opacity: 0.8;
-            line-height: 1.5;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.6s;
+            letter-spacing: 1px;
         }
 
         .grid {
@@ -55,6 +65,11 @@
             from { opacity: 0.05; }
             to { opacity: 0.15; }
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
@@ -62,8 +77,9 @@
 <div class="grid"></div>
 
 <div class="hero">
-    <h1>Asgard Northstar Technologies</h1>
-    <p>Engineering systems, software, and ideas for the next generation of innovation.</p>
+    <img src="logo.png" class="logo" alt="Asgard Northstar Logo">
+    <h1>ASGARD NORTHSTAR TECHNOLOGIES</h1>
+    <p>UBIQUITOUS CONTINUUM</p>
 </div>
 
 </body>
